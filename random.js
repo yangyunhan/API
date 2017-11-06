@@ -10,3 +10,11 @@ function shuffle(array) {
     }
     return array;
 }
+/*论坛上大家分享的洗牌的更简单的方式
+调用方式：
+var cards = ['','','','','',''];
+cards.sort(shuffle);
+*/
+function shuffle(){
+	return Math.random()>0.5?-1:1;
+}
